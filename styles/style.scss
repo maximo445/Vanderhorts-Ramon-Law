@@ -1,0 +1,34 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+@import "variables";
+@import "header";
+@import "intro_area";
+
+.do-area {
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 1rem; 
+    margin: auto;
+    max-width: 1050px; 
+    min-width: 900px;  
+    .doing {
+        position: relative;
+        .one {
+           width: 100%;
+           position: absolute;
+        }
+        .do-img {
+            height: 150px;
+            width: 100%;
+            background-color: rgba($color: #aa6161, $alpha: 1.0);
+            //background-size: cover;
+        }
+    }    
+}
